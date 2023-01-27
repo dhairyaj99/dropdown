@@ -1,0 +1,24 @@
+.language-button {
+    background-color: #ccc; /* gray background for inactive buttons */
+    border: none;
+    padding: 10px 15px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.language-button.active {
+    background-color: #4CAF50; /* green background for active button */
+    color: white;
+}
+.custom-select {
+    width: 100%;
+  }
+  
+.custom-option {
+    line-height: 2;
+}
+
+.custom-option .description {
+    font-size: 0.8em;
+    color: gray;
+}

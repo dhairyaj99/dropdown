@@ -1,0 +1,15 @@
+
+<div>
+  <button class="language-button" [ngClass]="{'active': language === 'en'}" (click)="changeLanguage('en')">EN</button>
+  <button class="language-button" [ngClass]="{'active': language === 'fr'}" (click)="changeLanguage('fr')">FR</button>
+
+</div>
+<div>
+  <label>Select an option:</label>
+  <input type="text" list="options" [(ngModel)]="selectedValue" (change)="onOptionSelected($event)" (click)="clearInput()" (focus)="clearInput()">
+  <datalist id="options">
+    <option *ngFor="let option of options" [value]="option.value">
+      {{ option.description[language] }}
+    </option>
+  </datalist>
+</div>
